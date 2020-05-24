@@ -6,15 +6,18 @@ body {
 #navigation {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 1.6rem;
-    line-height: 1.5em;
     height: 100%;
-    width: 30%;
+    width: 20%;
 }
 
 #navigation h1 {
     font-family: 'Major Mono Display', monospace;
     font-size: 2rem;
-    margin-left: 1em;
+}
+
+#navigation li {
+    text-indent: -1em;
+    margin: 0.5em;
 }
 
 a:link, a:visited, a:active {
