@@ -1,0 +1,28 @@
+body {
+    background-color: #121212;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navigation {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    height: 100%;
+    width: 30%;
+}
+
+#navigation h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2rem;
+    margin-left: 1em;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #A3B5A3;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #CED7CE;
+}
