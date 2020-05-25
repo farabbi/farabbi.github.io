@@ -3,6 +3,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
 #navigation {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 1.6rem;
