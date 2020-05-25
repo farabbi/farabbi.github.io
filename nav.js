@@ -14,7 +14,6 @@ $(document).ready(function() {
                 break;
             case 1:
                 $(".games").show();
-                console.log("games");
                 break;
             case 2:
                 $(".physical_computing").show();

@@ -1,6 +1,9 @@
-body {
+html, body {
     background-color: #121212;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 ul {
@@ -10,14 +13,14 @@ ul {
 nav {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 1.6rem;
-    height: 100%;
     width: 30%;
-    overflow: hidden;
+    float: left;
 }
 
 nav h1 {
     font-family: 'Major Mono Display', monospace;
     font-size: 2rem;
+    margin-left: 0.5em;
 }
 
 nav li {
@@ -39,4 +42,5 @@ footer {
     color: #A3B5A3;
     width: 70%;
     float: right;
+    clear: both;
 }
