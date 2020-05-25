@@ -35,6 +35,18 @@ a:hover {
     color: #CED7CE;
 }
 
+article {
+    color: #A3B5A3;
+    width: 70%;
+    float: right;
+    text-align: center;
+}
+
+article h2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.6rem;
+}
+
 footer {
     color: #A3B5A3;
     width: 70%;
