@@ -25,4 +25,5 @@ $(document).ready(function() {
                 break;
         }
     });
+    $("#footer-placeholder").load("/index.html footer");
 });
