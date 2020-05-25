@@ -6,27 +6,24 @@ for (var i = 0; i < categories.length; i++) {
     }
 }
 $(document).ready(function() {
-    $("#nav-placeholder").load("/index.html #navigation");
-    $(".subnav").hide();
-    console.log(i);
-    switch (i) {
-        case 0:
-            $(".short_films").show();
-            console.log("short_films");
-            break;
-        case 1:
-            $(".games").show();
-            console.log("games");
-            break;
-        case 2:
-            $(".physical_computing").show();
-            console.log("physical_computing");
-            break;
-        case 3:
-            $(".photography").show();
-            console.log("photography");
-            break;
-        default:
-            break;
-    }
+    $("#nav-placeholder").load("/index.html #navigation", function() {
+        $(".subnav").hide();
+        switch (i) {
+            case 0:
+                $(".short_films").show();
+                break;
+            case 1:
+                $(".games").show();
+                console.log("games");
+                break;
+            case 2:
+                $(".physical_computing").show();
+                break;
+            case 3:
+                $(".photography").show();
+                break;
+            default:
+                break;
+        }
+    });
 });
