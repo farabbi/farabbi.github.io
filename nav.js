@@ -6,7 +6,7 @@ for (var i = 0; i < categories.length; i++) {
     }
 }
 $(document).ready(function() {
-    $("#nav-placeholder").load("/index.html #navigation", function() {
+    $("#nav-placeholder").load("/index.html nav", function() {
         $(".subnav").hide();
         switch (i) {
             case 0:
