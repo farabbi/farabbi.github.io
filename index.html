@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jiuxin Zhu's Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans&family=Ubuntu+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/style.css">
@@ -11,52 +12,80 @@
                 $(".subnav").hide();
             });
         </script>
+        
     </head>
     <body>
         <nav>
-            <div>
-                <h1><a href="/">JIUXIN ZHU</a></h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="/01_short_films.html">Short Films</a></li>
-                        <ul class="subnav short_films">
-                            <li><a href="/01_short_films/new_york_dream.html">New York Dream</a></li>
-                            <li><a href="/01_short_films/slam_dunk.html">Slam Dunk</a></li>
-                            <li><a href="/01_short_films/lovebirds.html">Lovebirds</a></li>
-                            <li><a href="/01_short_films/cold_war.html">Cold War</a></li>
-                            <li><a href="/01_short_films/photography_is_harassment.html">Photography is Harassment</a></li>
-                            <li><a href="/01_short_films/freedom.html">Freedom</a></li>
-                        </ul>
-                    <li><a href="/02_games.html">Games</a></li>
-                        <ul class="subnav games">
-                            <li><a href="/02_games/harmony_town.html">Harmony Town</a></li>
-                        </ul>
-                    <li><a href="/03_physical_computing.html">Physical Computing</a></li>
-                        <ul class="subnav physical_computing">
-                            <li><a href="/03_physical_computing/iotshirt.html">IoTshirt</a></li>
-                            <li><a href="/03_physical_computing/here_was_looking_at_you.html">Here was looking at you</a></li>
-                            <li><a href="/03_physical_computing/keyboard_glove.html">Keyboard Glove</a></li>
-                            <li><a href="/03_physical_computing/conversation.html">Conversation</a></li>
-                            <li><a href="/03_physical_computing/shoe_generator.html">Shoe Generator</a></li>
-                            <li><a href="/03_physical_computing/drink_me.html">Drink Me</a></li>
-                            <li><a href="/03_physical_computing/bor_bor_zan.html">Bor-Bor-Zan</a></li>
-                        </ul>
-                    <li><a href="/04_photography.html">Photography</a></li>
-                        <ul class="subnav photography">
-                            <li><a href="/04_photography/skateboarding.html">Skateboarding</a></li>
-                        </ul>
-                    <li><a href="/05_paintings.html">Paintings</a></li>
-                    <li><a href="/06_blog.html">Blog</a></li>
-                    <li><a href="/07_bio.html">Bio</a></li>
-                    <li><a href="/08_contact.html">Contact</a></li>
-                </ul>
-            </div>
+            <h1><a href="/">JIUXIN ZHU</a></h1>
+            <div class="navigation"><a href="/01_short_films.html">Short Films</a></div>
+                <div class="subnav short_films">
+                    <div><a href="/01_short_films/new_york_dream.html">New York Dream</a></div>
+                    <div><a href="/01_short_films/slam_dunk.html">Slam Dunk</a></div>
+                    <div><a href="/01_short_films/lovebirds.html">Lovebirds</a></div>
+                    <div><a href="/01_short_films/photography_is_harassment.html">Photography is Harassment</a></div>
+                    <div><a href="/01_short_films/freedom.html">Freedom</a></div>
+                </div>
+            <div class="navigation"><a href="/02_games.html">Games</a></div>
+                <div class="subnav games">
+                    <div><a href="/02_games/harmony_town.html">Harmony Town</a></div>
+                </div>
+            <div class="navigation"><a href="/03_physical_computing.html">Physical Computing</a></div>
+                <div class="subnav physical_computing">
+                    <div><a href="/03_physical_computing/iotshirt.html">IoTshirt</a></div>
+                    <div><a href="/03_physical_computing/here_was_looking_at_you.html">Here was looking at you</a></div>
+                    <div><a href="/03_physical_computing/keyboard_glove.html">Keyboard Glove</a></div>
+                    <div><a href="/03_physical_computing/conversation.html">Conversation</a></div>
+                    <div><a href="/03_physical_computing/shoe_generator.html">Shoe Generator</a></div>
+                    <div><a href="/03_physical_computing/drink_me.html">Drink Me</a></div>
+                    <div><a href="/03_physical_computing/bor_bor_zan.html">Bor-Bor-Zan</a></div>
+                </div>
+            <div class="navigation"><a href="/04_photography.html">Photography</a></div>
+                <div class="subnav photography">
+                    <div><a href="/04_photography/skateboarding.html">Skateboarding</a></div>
+                </div>
+            <div class="navigation"><a href="/05_paintings.html">Paintings</a></div>
+            <div class="navigation"><a href="/06_blog.html">Blog</a></div>
+            <div class="navigation"><a href="/07_bio.html">Bio</a></div>
+            <div class="navigation"><a href="/08_contact.html">Contact</a></div>
         </nav>
-        
+        <main>
+            <div class="container">
+                <div class="wrapper short_films">
+                    <a href="/01_short_films/new_york_dream.html">
+                        <img class="with_preview" src="/imgs/new_york_dream.jpg" alt="A young man standing at a crossing" width="320" height="180">
+                        <p>New York Dream<br>Short Film</p>
+                    </a>
+                </div>
+                <div class="wrapper short_films">
+                    <a href="/01_short_films/slam_dunk.html">
+                        <img class="with_preview" src="/imgs/slam_dunk.jpg" alt="A person approaching a basketball hoop with a basketball in hand in a gym" width="320" height="180">
+                        <p>Slam Dunk<br>Short Film</p>
+                    </a>
+                </div>
+                <div class="wrapper short_films">
+                    <a href="/01_short_films/lovebirds.html">
+                        <img class="with_preview" src="/imgs/lovebirds.jpg" alt="A couple holding each other's hand trembling" width="320" height="180">
+                        <p>Lovebirds<br>Short Film</p>
+                    </a>
+                </div>
+                <div class="wrapper short_films">
+                    <a href="/01_short_films/photography_is_harassment.html">
+                        <img class="with_preview" src="/imgs/photography_is_harassment.jpg" alt="A girl looking at the camera annoyed" width="320" height="180">
+                        <p>Photography is Harassment<br>Short Film</p>
+                    </a>
+                </div>
+                <div class="wrapper short_films">
+                    <a href="/01_short_films/freedom.html">
+                        <img class="with_preview" src="/imgs/freedom.jpg" alt="A person sitting in front of a large screen on which a woman's headshot with a serious facial expression is displayed" width="320" height="180">
+                        <p>Freedom<br>Short Film</p>
+                    </a>
+                </div>
+            </div>
+        </main>
         <footer>
             <hr>
             <p>&copy;2020 by Jiuxin Zhu</p>
         </footer>
+        <script src="/preview.js"></script>
     </body>
 </html>
