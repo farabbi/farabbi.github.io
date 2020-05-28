@@ -94,6 +94,10 @@ main h2 {
     text-indent: 2em;
 }
 
+img {
+    image-orientation: from-image;
+}
+
 .gallery {
     position: relative;
 }

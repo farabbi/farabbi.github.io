@@ -1,15 +1,15 @@
 // Load navigation and footer according to the url
 var path = window.location.pathname;
 var categories = ["01_short_films", "02_games", "03_physical_computing", "04_photography"];
-for (var i = 0; i < categories.length; i++) {
-    if (path.indexOf(categories[i]) > -1) {
+for (var cat_i = 0; cat_i < categories.length; cat_i++) {
+    if (path.indexOf(categories[cat_i]) > -1) {
         break;
     }
 }
 $(document).ready(function() {
     $("#nav-placeholder").load("/index.html nav", function() {
         $(".subnav").hide();
-        switch (i) {
+        switch (cat_i) {
             case 0:
                 $(".short_films").slideDown();
                 break;
@@ -25,6 +25,26 @@ $(document).ready(function() {
             default:
                 break;
         }
+    });
+    $("#main-placeholder").load("/index.html main", function() {
+        $(".wrapper").hide();
+        switch (cat_i) {
+            case 0:
+                $(".short_films").fadeIn();
+                break;
+            case 1:
+                $(".games").fadeIn();
+                break;
+            case 2:
+                $(".physical_computing").fadeIn();
+                break;
+            case 3:
+                $(".photography").fadeIn();
+                break;
+            default:
+                break;
+        }
+        $.getScript("/js/preview.js");
     });
     $("#footer-placeholder").load("/index.html footer");
 });

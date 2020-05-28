@@ -1,36 +1,36 @@
-var index = 0;
+var pho_i = 0;
 var photos = $("#photoGallery .imageWrapper");
 photos.hide();
-$(photos[index]).fadeIn();
+$(photos[pho_i]).fadeIn();
 for (var i = 0; i < photos.length; i++) {
     var selector = $('<span class="selector">&bull;</span>');
     $("#photoGallery .selector-placeholder").append(selector);
 }
 var selectors = $("#photoGallery .selector");
-$(selectors[index]).addClass("selected");
+$(selectors[pho_i]).addClass("selected");
 
 
 
 var prev_photo = function() {
-    $(photos[index]).hide();
-    $(selectors[index]).removeClass("selected");
-    index--;
-    if (index < 0) {
-        index += photos.length;
+    $(photos[pho_i]).hide();
+    $(selectors[pho_i]).removeClass("selected");
+    pho_i--;
+    if (pho_i < 0) {
+        pho_i += photos.length;
     }
-    $(photos[index]).fadeIn();
-    $(selectors[index]).addClass("selected");
+    $(photos[pho_i]).fadeIn();
+    $(selectors[pho_i]).addClass("selected");
 };
 
 var next_photo = function() {
-    $(photos[index]).hide();
-    $(selectors[index]).removeClass("selected");
-    index++;
-    if (index >= photos.length) {
-        index -= photos.length;
+    $(photos[pho_i]).hide();
+    $(selectors[pho_i]).removeClass("selected");
+    pho_i++;
+    if (pho_i >= photos.length) {
+        pho_i -= photos.length;
     }
-    $(photos[index]).fadeIn();
-    $(selectors[index]).addClass("selected");
+    $(photos[pho_i]).fadeIn();
+    $(selectors[pho_i]).addClass("selected");
 };
 
 var auto_display = window.setInterval(next_photo, 5000);
