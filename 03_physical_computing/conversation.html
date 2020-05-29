@@ -11,6 +11,46 @@
     </head>
     <body>
         <div id="nav-placeholder"></div>
+        <main>
+            <h2>Conversation (2018)</h2>
+            <p>Alternative Game Controller</p>
+            <div class="videoWrapper">
+                <iframe src="https://player.vimeo.com/video/307166678" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <p class="paragraph" style="text-indent: 0;">​
+                By Jiuxin Zhu & Edanur Kuntman
+            </p>
+            <p class="paragraph" style="text-indent: 0;">​
+                <b>Roles of each person</b>
+                <br>Eda: Costume Design
+                <br>Jiuxin: Coding
+            </p>
+            <p class="paragraph" style="text-indent: 0;">​
+                <b>Game/project concept statement</b>
+                <br>We want to design a two-player game about generating random conversations between players by making them only have physical interaction.
+            </p>
+            <p class="paragraph" style="text-indent: 0;">​
+                <b>Process from ideation to final project</b>
+                <br>Our game is about negative effects of social media on human interaction. Considering features of social media, two crucial aspects are hiding identity and preventing actual physical interaction. To combine these two aspects together, we decide to make masks to cover players’ faces and let players communicate through physical interaction.
+                <br>Eda was in charge of costume design. She engraved felt with laser cutters, cut out shapes of masks and sewed them with craft foam to make masks. She also added feathers, chenille stems and small plastic gadgets as decorations. Jiuxin was in charge of coding. He made prototypes for buttons, led lights and wireless connections. He also built the connection between physical actions and audio and visual feedback with Arduino and Processing. We had meetings at least once a week to discuss details of the game.
+            </p>
+            <p class="paragraph" style="text-indent: 0;">​
+                <b>Playtesting and feedback</b>
+                <br>At the beginning, we want to make a game where one player guides the other player to choose a correct icon on buttons. To provide different levels, we put icons on the screen and map buttons to icons by different colors. However, during playtesting, players focus on colors of buttons instead of icons. What’s more, the complexity of rules and the challenging features of the game made the game hard to explain and not enjoyable.
+                <br>Thus, we simplify the rules by making a storytelling game which does not have “correct answers” at all and only give each player two choices: button on the left and button on the right. Led lights are only used to give feedback of button touching and player in turn, and only have one color.
+                <br>We also got feedbacks such as “Player felt uncomfortable when pressure buttons were pressed on the mask”, which we solved by using light sensors as buttons, “Body-size mask had too much constraints to the player and the player who held the big mask could not enjoy the game.”, which we solved by making two face-size masks and adding buttons to both of them so that both players can make selections and enjoy the game.
+                <br>The game provides an experience of communicating only by physical contacts. The mask adds an aesthetic experience to the player and helps the player focus on the other player. The interactions between players are unique and interesting. Observers can also have a joyful experience, though they feel they are isolated from the conversation.
+                <br>To improve, we can add some plot to the game and revise the text. Besides, the threshold of light sensors can be programmed to adjust automatically.
+            </p>
+            <p class="paragraph" style="text-indent: 0;">​
+                <b>List of materials, components, sensors, etc.</b>
+                <br>The mask is made with felt, foam, feathers, chenille stems and ring-shape plastic decorations. Light sensors are used as buttons, while each of them needs a resistor to work with. A Neopixel is used on each mask as an indicator. Three Arduino Uno with XBee are used for wireless connections. Two of them are installed on masks, while the other one works as a host and connects to the computer.
+            </p>
+            <p class="paragraph" style="text-indent: 0;">​
+                <b>Link to or copy of code</b>
+                <br>Code and sound files can be found <a target="_blank" href="https://github.com/farabbi/random_conversation_2">here</a>.
+            </p>
+        </main>
         <div id="footer-placeholder"></div>
     </body>
 </html>
