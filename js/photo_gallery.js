@@ -3,7 +3,7 @@ var photos = $("#photoGallery .imageWrapper");
 photos.hide();
 $(photos[pho_i]).fadeIn();
 for (var i = 0; i < photos.length; i++) {
-    var selector = $('<span class="selector">&bull;</span>');
+    var selector = $('<span class="selector">&#8226</span>');
     $("#photoGallery .selector-placeholder").append(selector);
 }
 var selectors = $("#photoGallery .selector");

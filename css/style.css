@@ -94,6 +94,20 @@ main h2 {
     text-indent: 2em;
 }
 
+.button {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.2em;
+    color: #FFF !important;
+    background-color: #7D967D;
+    padding: 0.5em;
+    border-radius: 2em;
+    margin-left: 0.5em;
+}
+
+.button:hover {
+    background-color: #A3B5A3;
+}
+
 img {
     image-orientation: from-image;
 }
@@ -160,6 +174,27 @@ footer {
     width: 75%;
     float: right;
     clear: both;
+}
+
+.puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.joke {
+    display: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media only screen and (max-width: 768px) {

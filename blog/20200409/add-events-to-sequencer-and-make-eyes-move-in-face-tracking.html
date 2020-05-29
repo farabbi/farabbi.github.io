@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jiuxin Zhu's Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="/js/load.js"></script>
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <main>
+            <h2>UE4: Add Events to Sequencer and Make Eyes Move in Face Tracking</h2>
+            <p>April 9, 2020</p>
+            <p class="paragraph" style="text-indent: 0;">
+                To trigger event in sequencer, for example, triggering physics function to an actor in the level:
+                <br>1. Create a Blueprint Interface
+                <br>2. Rename the function in the Blueprint Interface to a meaningful name
+                <br>3. Add a event track to the sequencer (Note: the event track should be a separate track, not under an actor)
+                <br>4. Add a key frame to the event track
+                <br>5. Right click the key frame to create a sequence event
+                <br>6. Add the Blueprint Interface in the Implemented Interfaces in Class Setting of SequenceDirector, compile and save SequenceDirector (Note: you have to compile and save before next step)
+                <br>7. Connect the function of Blueprint Interface to the sequence event through Interface Call, compile and save SequenceDirector
+                <br>8. In Level Blueprint, add the Blueprint Interface in the Implemented Interfaces in Class Setting, compile and save (Note: you have to compile and save before next step)
+                <br>9. Add an event for the function of Blueprint Interface
+                <br>10. Connect the event to the actions you want
+            </p>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TgSqWFE0Qlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="paragraph" style="text-indent: 0;">
+                To make eyes move in face tracking:
+                <br>1. Create a new PoseAsset (Create Asset - Create PoseAsset - Current Pose).
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/01.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                2. In the PoseAsset, add eye movements.
+                <br>To do this:
+                <br>a. Rotate the eyeball to the position you want the pose to be.
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/02_a.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                b. Insert Pose to the PoseAsset (Create Asset - Create PoseAsset - Insert Pose - [Choose Your PoseAsset]).
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/02_b.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                c. Slide the slidebar of the new pose to 1. The eyeball will now be in an unwanted position, but it’s okay.
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/02_c.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                d. Rotate the eyeball back to where you want it to be.
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/02_d.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                e. Slide the slidebar of the new pose back to 0.
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/02_e.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                f. Rename the new pose according to <a target="_blank" href="https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)">the naming conventions for Apple blendshapes</a>.
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/02_f.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                g. Do the above for all other poses, the result should look like this:
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/02_g.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+            <p class="paragraph" style="text-indent: 0;">
+                h. Note: You should rotate the eyeball to the position you want first, and then insert a new pose. You can delete Pose_0 in the screenshot above.
+            </p>
+            <p class="paragraph" style="text-indent: 0;">
+                3. Connect the PoseAsset in Animation Blueprint. It should work now.
+            </p>
+            <div class="imageWrapper"><img src="/blog/20200409/03.jpg" alt="Screenshot of the process" width="100%" height="auto"></div>
+        </main>
+        <div id="footer-placeholder"></div>
+    </body>
+</html>
