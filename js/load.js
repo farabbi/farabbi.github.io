@@ -1,6 +1,6 @@
 // Load navigation and footer according to the url
 var path = window.location.pathname;
-var categories = ["01_short_films", "02_games", "03_physical_computing", "04_photography"];
+var categories = ["01_short_films", "02_games", "03_physical_computing", "04_photography", "00_work_samples"];
 for (var cat_i = 0; cat_i < categories.length; cat_i++) {
     if (path.indexOf(categories[cat_i]) > -1) {
         break;
@@ -22,6 +22,9 @@ $(document).ready(function() {
             case 3:
                 $(".photography").slideDown();
                 break;
+            case 4:
+                $(".work_samples").slideDown();
+                break;
             default:
                 break;
         }
@@ -40,6 +43,9 @@ $(document).ready(function() {
                 break;
             case 3:
                 $(".photography").fadeIn();
+                break;
+            case 4:
+                $(".work_samples").fadeIn();
                 break;
             default:
                 break;
