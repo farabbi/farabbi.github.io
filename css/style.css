@@ -87,6 +87,21 @@ main h2 {
     height: 100%;
 }
 
+.pdfWrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.pdfWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .paragraph {
     text-align: left;
     font-size: 1.2rem;
